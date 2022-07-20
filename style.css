@@ -760,4 +760,17 @@ a{
     .middle .nine{
         margin-bottom: 50px;
     }
+    .middle .fa-feather-pointed{
+        position: fixed;
+        bottom: 75px;
+        right: 10px;
+        z-index: 60;
+        background-color: var(--button-bg-color);
+        padding: 15px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        width: fit-content;
+        font-size: 20px;
+        cursor: pointer;
+    }
 }
