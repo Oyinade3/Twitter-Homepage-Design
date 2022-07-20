@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --main-bg-color: #000000;
+    --main-text-color: #e7e9ea;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --blue-text-color:#1d9bf0;
+    --grey-text-color:#71767b;
+    --button-bg-color:#1d9bf0;
+    --header-sticky-color: rgb(0, 0, 0, 0.3);
+    --button-wht-bg-color: #eff3f4;
+    --button-wht-hover-color: #d7dbdc;
+}
+.left{
+    --button-hover-color: rgba(180, 180, 180, 0.2);
+    --button-bl-hover-color:#1a8cd8;
+}
+.middle{
+    --div-hover-color: rgba(55, 55, 55, 0.2);
+    --comment-hover-color: rgba(18, 124, 167, 0.3);
+    --retweet-text-color: #00ba7c;
+    --retweet-hover-color: rgba(0, 186, 124, 0.1);
+    --like-text-color: #f91880;
+    --like-hover-color: rgba(249, 24, 128, 0.1);
+    --upload-hover-color: #1d9bf0;
+    --tooltip-bg-color: rgb(50, 50, 50);
+}
+.right{
+    --trends-bg-color: rgb(29, 27, 27);
+    --trends-hover-color: rgba(50, 50, 50, 0.4);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+.container{
+    display: grid;
+    grid-template-columns: auto 600px 30%;
+}
+.grey-text{
+    color: var(--grey-text-color);
+    font-size: 14px;
+}
+.blue-text{
+    color: var(--blue-text-color);
+    font-size: 14px;
+}
+.oyin-header-pic,
+.bottom-nav{
+    display: none;
+}
+.profile{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.pic1{
+    background-image: url(./img_twitter/twitter\ profile\ pic1.jpg);
+}
+.pic2{
+    background-image: url(./img_twitter/twitter\ profile\ pic2.jpg);
+}
+.pic3{
+    background-image: url(./img_twitter/twitter\ profile\ pic3.jpg);
+}
+.pic4{
+    background-image: url(./img_twitter/twitter\ profile\ pic4.jpg);
+}
+.pic5{
+    background-image: url(./img_twitter/twitter\ profile\ pic5.jpg);
+}
+.pic6{
+    background-image: url(./img_twitter/twitter\ profile\ pic6.jpg);
+}
+.pic7{
+    background-image: url(./img_twitter/twitter\ profile\ pic7.jpg);
+}
+.pic8{
+    background-image: url(./img_twitter/twitter\ profile\ pic8.jpg);
+}
+.pic9{
+    background-image: url(./img_twitter/twitter\ profile\ pic9.jpg);
+}
+.pic10{
+    background-image: url(./img_twitter/twitter\ profile\ pic10.jpg);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.left .page-icons ul li{
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    font-size: 20px;
+    cursor: pointer;
+}
+.left #twitter-icon{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 200px;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+.left #twitter-icon:hover{
+    background-color: rgba(135,206, 235, 0.2);
+}
+.left .page-icons ul li span{
+    padding: 0 20px;
+}
+.left .page-icons ul li:hover{
+    background-color: var(--button-hover-color);
+}
+.left .fa-feather-pointed,
+.left .usernm-pic{
+    display: none;
+}
+.left button{
+    padding: 15px;
+    background-color: var(--button-bg-color);
+    color: var(--main-text-color);
+    width: 80%;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.left button:hover,
+.left .fa-feather-pointed:hover{
+    background-color: var(--button-bl-hover-color);
+}
+.left .oyin-button{
+   width: 100%;
+   padding: 12px;
+   border-radius: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+.left .oyin-button :nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.left .oyin-button:hover{
+    background-color: var(--button-hover-color);
+}
+.left .oyin-pic{
+    background-image: url(img_twitter/oyin-t-profile-pic.jpg);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* style for middle section */
+.middle{
+    border: 2px solid var(--border-color);
+}
+.middle .header{
+    position: sticky;
+    top: 0;
+    background-color: var(--header-sticky-color);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+}
+.middle .header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.middle .oyin-pic{
+    background-image: url(img_twitter/oyin-t-profile-pic.jpg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;   
+}
+.middle .tweet-box{
+    width: 100%;
+    border-bottom: 1.5px solid var(--border-color);
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    transition: all 0.5s ease; 
+}
+.middle .tweet-bx{
+    width: 100%;
+    border-bottom: 1.5px solid var(--border-color);
+    padding: 10px;
+    cursor: pointer;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+.middle .tweet-bx .tweet{
+    display: flex;
+    gap: 20px;
+    max-width: 100%; 
+}
+.middle .tweet-bx:hover{
+    background-color: var(--div-hover-color);
+}
+.middle .tweet-box:hover{
+    background-color: var(--div-hover-color);
+}
+.middle .one{
+    cursor: auto;
+    display: flex;
+    gap: 10px;
+}
+.middle .one:hover{
+    background-color: var(--main-bg-color);
+}
+.middle input{
+    background-color: inherit;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.middle input:focus{
+    outline: none;
+    color: white;
+}
+.middle input:focus~.focus-div{
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+.middle .focus-div{
+    display: none;
+}
+.middle .icons-button{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+.middle .icons-button .blue-text{
+    display: flex;
+    margin-right: 150px;
+}
+.middle .icons-button i{
+    font-size: 18px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.middle .icons-button .fa-image{
+    padding: 10px;
+}
+.middle .icons-button .bi-geo-alt{
+    opacity: 0.5;
+    cursor: auto;
+}
+.middle .icons-button .bi-geo-alt:hover{
+    background-color: var(--main-bg-color);
+}
+.middle .icons-button i:hover{
+    background-color: var(--comment-hover-color);
+    border-radius: 100px;
+}
+.middle .icons-button .button{
+    text-align: center;
+    background-color: var(--button-bg-color);
+    padding: 5px 15px;
+    border-radius: 100px;
+    opacity: 0.5;
+    cursor: auto;
+}
+.middle .row2{
+    position: relative;
+}
+.middle .username{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: fit-content;
+}
+.middle .username ul{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.middle .username ul :nth-child(1) :hover{
+    text-decoration: underline;
+}
+.middle .username ul li{
+    padding-right: 5px;
+}
+.middle .tooltip{
+    display: none;
+}   
+.middle section .grey-text:hover{
+    position: relative;
+    transition: all 0.5s ease;
+}
+.middle section .grey-text:hover .tooltip{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    left: 0;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: var(--tooltip-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2px;
+}
+.middle section ul{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    margin: 10px 0;
+}
+.middle section i{
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+.middle .tweet .share-comment:hover{
+    color: var(--button-bg-color);
+}
+.middle .tweet .share-comment:hover i{
+    background-color: var(--comment-hover-color);
+    border-radius: 50%;
+}
+.middle .tweet .retweet:hover{
+    color: var(--retweet-text-color);
+}
+.middle .tweet .retweet:hover i{
+    background-color: var(--retweet-hover-color);
+    border-radius: 50%;
+}
+.middle .tweet .like:hover{
+    color: var(--like-text-color);
+}
+.middle .tweet .like:hover i{
+    background-color: var(--like-hover-color);
+    border-radius: 50%;
+}
+.middle .tweet-text{
+    font-size: 14px;
+}
+.middle .two{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+}
+.middle .block-text{
+    padding: 0 40px;
+    margin: 5px;
+}
+/* style for hover box */
+.middle .hover-box{
+    display: none;
+    background-color: var(--main-bg-color);
+    width: 300px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px var(--grey-text-color);
+}
+.middle .hover-box .hover-follow{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+.middle .hover-box .hover-div{
+    display: flex;
+    justify-content: space-between;
+}
+.middle .hover-box .hover-div button{
+    padding: 10px 15px;
+    font-weight: bold;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: var(--button-wht-bg-color);
+}
+.middle .three .username:hover,
+.middle .three .row1:hover{
+    position: relative;
+    transition: all 0.5s ease;
+}
+.middle .three .username:hover ~ .hover-box,
+.middle .three .pics:hover ~ .hover-box{
+   display: block;
+   position: absolute;
+   top: 50px;
+   z-index: 15;
+   transition: all 0.5s ease;
+}
+
+.middle .three .small{
+    width: 40px;
+    height: 40px;
+}
+.middle .row1 .pics{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.middle .five .post-pic-box{
+    border: 1.5px solid var(--border-color);
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 90%;
+}
+.middle .five .post-pic-box :nth-child(2) ul{
+    padding: 12px;
+    border-top: 1.5px solid var(--border-color);
+    font-size: 14px;
+}
+.post{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* style for right section */
+.right{
+    position: sticky;
+    top: 0;
+    right: 0;
+    max-height: 230vh;
+    margin: 0 20px;
+}
+.right .header{
+    position: sticky;
+    top: 0;
+    background-color: var(--main-bg-color);
+}
+.right .header input{
+    padding: 15px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--trends-bg-color);
+    border-radius: 25px;
+    border: 1px solid var(--trends-bg-color);
+    padding-left: 15%;
+    position: relative;
+    color: white;
+}
+.right .header .bi-search{
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    z-index: 5;
+}
+.right .header input:focus{
+    border: 1px solid var(--blue-text-color);
+    outline: none;
+    background-color: var(--main-bg-color);
+}
+.right .main1,
+.right .main2{
+    background-color: var(--trends-bg-color);
+    border-radius: 25px;
+    margin: 15px 0;
+    width: 100%;
+}
+.right .main1 h2,
+.right .main2 h2{
+    padding: 10px 20px;
+}
+.right .main1 .higlight-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.right .main1 div,
+.right .main2 section{
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.right .main1 div:hover,
+.right .main2 section:hover{
+    background-color: var(--trends-hover-color);
+}
+.right .main1 div ul{
+    display: flex;
+}
+.right .main2 section{
+    display: flex;
+    gap: 15px;
+}
+.right .main2 section .follow-ppl{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+.right .main2 section .follow-ppl button{
+    padding: 10px 15px;
+    font-weight: bold;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: var(--button-wht-bg-color);
+}
+.right .main2 section .follow-ppl button:hover{
+    background-color: var(--button-wht-hover-color);
+}
+.right .main2 section .follow-ppl .follow-btn{
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: rgb(45, 45, 42);
+}
+.right .footer{
+    margin-bottom: 50px;
+}
+.right .footer a{
+    padding: 5px;
+}
+.right .footer a:hover{
+    text-decoration: underline;
+    color: var(--grey-text-color);
+}
+/* style for message box */
+.fixed_bottom{
+    position: sticky;
+    bottom: 0;
+    cursor: pointer;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 0px 6px 2px var(--grey-text-color);
+}
+.fixed_bottom input{
+    display: none;
+}
+.fixed_content{
+    width: 100%;
+    display: none;
+    background-color: var(--main-bg-color);
+}
+.fixed_bottom input:checked ~ .fixed_content{
+    display: block;
+    background-color: var(--main-bg-color);
+    z-index: 50;
+    position: relative;
+    bottom: 0;
+} 
+.fixed_bottom nav{
+    display: flex;
+}
+.fixed_bottom label{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--main-bg-color);
+    position: sticky;
+    top: 0;
+}
+.fixed_bottom label ul{
+    display: flex;
+}
+.fixed_bottom label ul li{
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+.fixed_bottom label ul li:hover{
+    background-color: var(--border-color);
+}
+.fixed_bottom .message-box{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    gap: 10px;
+    padding: 8px;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.fixed_bottom .message-box:hover{
+    background-color: var(--border-color);
+}
+.fixed_bottom .message-box section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.fixed_bottom .message-box section ul{
+    display: flex;
+}
+.fixed_bottom .message-box section ul li{
+    margin: 0 5px;
+}
+.fixed_bottom .message-box section .bi-three-dots{
+    display: none;
+}
+.fixed_bottom .message-box:hover .bi-three-dots{
+    display: inline;
+}
+.fixed_bottom .message-box:hover .disappear{
+    display: none;
+}
+@media screen and (max-width: 1280px){
+    .container{
+        display: grid;
+        grid-template-columns: 110px 600px auto;
+    }
+    .left .icon-text,
+    .left button,
+    .left .oyin-button{
+        display: none;
+    }
+    .left .fa-feather-pointed{
+        display: block;
+        background-color: var(--button-bg-color);
+        padding: 15px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        width: fit-content;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .left .usernm-pic{
+        display: block;
+        padding: 5px;
+        border-radius: 50px
+    }
+    .left .usernm-pic:hover{
+        background-color: var(--main-bg-color);
+    }
+    .icon-disply-none{
+        display: none;
+    }
+}
+@media screen and (max-width: 1077px){
+    .fixed_bottom{
+        display: none;
+    }
+}
+@media screen and (max-width: 1004px){
+    .container{
+        display: flex;
+    }
+    .left{
+        max-width: 10vw;
+    }
+    .middle{
+        max-width: 90vw;
+    }
+    .right{
+        display: none;
+    }
+}
+@media screen and (max-width: 705px){
+    .container{
+        display: flex;
+    }
+    .left{
+        max-width: 10vw;
+    }
+    .middle{
+        max-width: 90vw;
+    }
+    .middle .bi-bar-chart-line,
+    .middle .usernm-display-none{
+        display: none;
+    }
+    .middle .icons-button .blue-text{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    .middle{
+        width: 100vw;
+        border: none;
+        margin: 0;
+    }
+    .middle .one,
+    .middle .two,
+    .hover-box,
+    .left{
+        display: none;
+    }
+    .middle .tweet-box,
+    .middle .tweet-bx{
+        width: 100vw;
+    }
+    .middle .tweet-box{
+        padding: 15px;
+    }
+    .middle .header{
+        display: flex;
+        width: 100vw;
+    }
+    .middle .header ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .middle .oyin-header-pic{
+        display: inline-block;
+        background-image: url(./img_twitter/oyin-t-profile-pic.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        margin-right: 20px;
+    }
+    .bottom-nav{
+        display: block;
+    }
+    .bottom-nav ul{
+        font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--main-bg-color);
+    }
+    .middle .nine{
+        margin-bottom: 50px;
+    }
+}
