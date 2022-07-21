@@ -30,6 +30,7 @@ I most especially wanted to ingrain my knowledge about:
 ### Screenshot
 
 These are the views of the original twitter homepage I tried to replicate on 4 different screen sizes:  
+
 ![desktop-view](./img_twitter/Screenshot%20(181).png)
 ![small-desktop-view](./img_twitter/Screenshot%20(215).png)
 ![ipad-view](./img_twitter/Screenshot%20(214).png)
