@@ -29,7 +29,7 @@ I most especially wanted to ingrain my knowledge about:
 
 ### Screenshot
 
-These are the views of the original twitter homepage on 4 different screen sizes:
+These are the views of the original twitter homepage I tried to replicate on 4 different screen sizes:  
 ![desktop-view](./img_twitter/Screenshot%20(181).png)
 ![small-desktop-view](./img_twitter/Screenshot%20(215).png)
 ![ipad-view](./img_twitter/Screenshot%20(214).png)
@@ -52,7 +52,7 @@ These are the views of the original twitter homepage on 4 different screen sizes
 
 ### What I learned
 
-I majorly learnt how to style a website into sections using CSS grid layout and I was able to broaden my html and css skills through this practice.
+I majorly learnt how to style a website into sections using CSS grid layout and I was able to broaden my html and css skills through this practice.  
 I still have more to learn but this project pushed me and I've acquired even more knowledge than when I started out. 
 
 ## Author
